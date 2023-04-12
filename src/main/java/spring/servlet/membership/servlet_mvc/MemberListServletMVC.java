@@ -25,7 +25,7 @@ public class MemberListServletMVC extends HttpServlet {
         req.setAttribute("members", members);
 
         //viewPath로 이동 및 정보 전달(페이지 이동)
-        String viewPath = "/WEB-INF/members.jsp";
+        String viewPath = "/WEB-INF/views/members.jsp";
         RequestDispatcher requestDispatcher = req.getRequestDispatcher(viewPath);
         requestDispatcher.forward(req, resp);
     }
