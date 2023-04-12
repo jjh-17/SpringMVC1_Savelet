@@ -22,7 +22,7 @@ public class MemberListControllerV2 implements ControllerV2 {
         request.setAttribute("members", members);
 
         //V1과 달리 MyView 객체를 이용하여 페이지 이동 중복 코드 제거
-        return new MyView("/WEB-INF/members.jsp");
+        return new MyView("/WEB-INF/views/members.jsp");
 
     }
 }
