@@ -57,6 +57,7 @@ public class FrontControllerServletV3 extends HttpServlet {
     }
 
     //View 논리 이름을 이용하여 View 생성하는 메서드
+    //실제 위치가 바뀌더라도 컨트롤러는 수정할 필요 없음 ==> 이 메서드만 수정하면 됨
     private MyView viewResolver(String viewName) {
         return new MyView("/WEB-INF/views/" + viewName + ".jsp");
     }
